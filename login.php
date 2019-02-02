@@ -2,7 +2,6 @@
 $title = 'Admin Login'; 
 include('template/header.php');
  ?>
-
     <!-- Header ends-->
     <!-- Content Starts-->
     <div id="main" class="container">
