@@ -79,7 +79,8 @@ navbar-nav {
  }
  .divider{
      border-bottom: 1px solid #369;
-     margin: 0 10% 0 10%;
+     display: block;
+    
  }
 #main{
     transition: margin-left 0.3s;
@@ -93,4 +94,5 @@ navbar-nav {
 }
 @media(min-width:768px){
     .open-slide{display: none}
+    .side-nav{display: none}
 }
