@@ -43,9 +43,9 @@
              <li>   <a href="#">Schedule</a></li>   
              <li>   <a href="#">Results</a></li>   
              <li>   <a href="#">Stats</a></li>   
-             <li>   <a href="#">Team Admin</a></li>   
-             <li>   <a href="#">Club Admin</a></li>   
-             <li>   <a href="#">League Admin</a></li>   
+             <li>   <a href="login.php">Team Admin</a></li>   
+             <li>   <a href="login.php">Club Admin</a></li>   
+             <li>   <a href="login.php">League Admin</a></li>   
         </ul>
     </nav>
     <div id="side-menu" class="side-nav">
@@ -57,9 +57,9 @@
         <a href="#">Results</a>
         <a href="#">Stats</a>
          <span class="divider"></span>
-        <a href="#">Team Admin</a>
-        <a href="#">Club Admin</a>
-        <a href="#">League Admin</a>
+        <a href="login.php">Team Admin</a>
+        <a href="login.php">Club Admin</a>
+        <a href="login.php">League Admin</a>
         
     </div>
  
