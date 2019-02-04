@@ -1,41 +1,36 @@
 <div class="twPc-div ">
-                            <span class="twPc-bg twPc-block twPc-title ">Premier Batting</span>
+    <span class="twPc-bg twPc-block twPc-title ">
+        <?php echo $RankCardTitle ?></span>
+    <div>
+        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
+            <img alt="Mert S. Kaplan" src="assets/icons/profile.jpg" class="twPc-avatarImg">
+        </a>
+        <div class="twPc-divUser">
+            <div class="twPc-divName">
+                <a href="#"><?php echo $RankCardPlayer; ?></a>
+            </div>
+            <span>
+                <a href="#"><span><?php echo $RankCardPlayerTeam; ?></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="twPc-divStats">
+        <ul class="twPc-Arrange">
 
-                            <div>
-                                <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                                    <img alt="Mert S. Kaplan" src="assets/icons/profile.jpg" class="twPc-avatarImg">
-                                </a>
+            <li class="twPc-ArrangeSizeFit bg-primary text-white">
+                <span class="twPc-StatLabel twPc-block "><?php echo $param1Title; ?></span>
+                <span class="twPc-StatValue"><?php echo $param1Value; ?></span>
+            </li>
 
-                                <div class="twPc-divUser">
-                                    <div class="twPc-divName">
-                                        <a href="#">Mert S. Kaplan</a>
-                                    </div>
-                                    <span>
-                                        <a href="#">@<span>mertskaplan</span></a>
-                                    </span>
-                                </div>
+            <li class="twPc-ArrangeSizeFit bg-warning text-dark">
+                <span class="twPc-StatLabel twPc-block"><?php echo $param2Title; ?></span>
+                <span class="twPc-StatValue"><?php echo $param2Value; ?></span>
+            </li>
 
-                                <div class="twPc-divStats">
-                                        <ul class="twPc-Arrange">
-                                            <li class="twPc-ArrangeSizeFit bg-primary text-white">
-                                                <span href="#" title="9.840 Tweet">
-                                                    <span class="twPc-StatLabel twPc-block ">Runs</span>
-                                                    <span class="twPc-StatValue">240</span>
-                                                </span>
-                                            </li>
-                                            <li class="twPc-ArrangeSizeFit bg-warning text-dark">
-                                                <span href="#" title="885 Following">
-                                                    <span class="twPc-StatLabel twPc-block">Innings</span>
-                                                    <span class="twPc-StatValue">6</span>
-                                                </span>
-                                            </li>
-                                            <li class="twPc-ArrangeSizeFit bg-info text-white">
-                                                <span href="#" title="1.810 Followers">
-                                                    <span class="twPc-StatLabel twPc-block">Avg</span>
-                                                    <span class="twPc-StatValue">1.810</span>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </div>
+            <li class="twPc-ArrangeSizeFit bg-info text-white">
+                <span class="twPc-StatLabel twPc-block"><?php echo $param3Title; ?></span>
+                <span class="twPc-StatValue"><?php echo $Param3Value; ?></span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -4,7 +4,7 @@
     
     border: 1px solid #e1e8ed;
     border-radius: 6px;
-   height: 200px;
+   height: auto;
     max-width: 340px; 
    
 }
@@ -64,11 +64,7 @@
 .twPc-divName a {
     color: inherit !important;
 }
-.twPc-divStats {
-   
-    padding: 10px 0;
-    text-align: center;
-}
+
 .twPc-Arrange {
     box-sizing: border-box;
     display: table;
@@ -81,11 +77,13 @@ ul.twPc-Arrange {
     list-style: outside none none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .twPc-ArrangeSizeFit {
     display: table-cell;
     padding: 0;
     vertical-align: top;
+    min-width: 80px;
 }
 .twPc-ArrangeSizeFit a:hover {
     text-decoration: none;
