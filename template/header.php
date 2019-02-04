@@ -39,9 +39,9 @@
 
         <ul class="navbar-nav">
                
-             <li>   <a href="#">Home</a></li>     
-             <li>   <a href="#">Scoring</a></li>   
-             <li>   <a href="#">Live Games</a></li>   
+             <li>   <a href="index.php">Home</a></li>     
+             <li>   <a href="scoring.php">Scoring</a></li>   
+             <li>   <a href="liveGames.php">Live Games</a></li>   
              <li>   <a href="#">Schedule</a></li>   
              <li>   <a href="#">Results</a></li>   
              <li>   <a href="#">Stats</a></li>   
@@ -52,9 +52,9 @@
     </nav>
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Scoring</a>
-        <a href="#">Live Games</a>
+        <a href="index.php">Home</a>
+        <a href="scoring.php">Scoring</a>
+        <a href="liveGames.php">Live Games</a>
         <a href="#">Schedule</a>
         <a href="#">Results</a>
         <a href="#">Stats</a>
