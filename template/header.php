@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/rankCard.css">
     <link rel="stylesheet" href="template/css/style.css">
     
+    <?php include('menu.php'); ?>
   
 </head>
 <body>
@@ -38,31 +39,11 @@
     
 
         <ul class="navbar-nav">
-               
-             <li>   <a href="index.php">Home</a></li>     
-             <li>   <a href="scoring.php">Scoring</a></li>   
-             <li>   <a href="liveGames.php">Live Games</a></li>   
-             <li>   <a href="#">Schedule</a></li>   
-             <li>   <a href="#">Results</a></li>   
-             <li>   <a href="#">Stats</a></li>   
-             <li>   <a href="login.php">Team Admin</a></li>   
-             <li>   <a href="login.php">Club Admin</a></li>   
-             <li>   <a href="login.php">League Admin</a></li>   
+        <?php desktopMenu($menu); ?> 
         </ul>
     </nav>
     <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="index.php">Home</a>
-        <a href="scoring.php">Scoring</a>
-        <a href="liveGames.php">Live Games</a>
-        <a href="#">Schedule</a>
-        <a href="#">Results</a>
-        <a href="#">Stats</a>
-         <span class="divider"></span>
-        <a href="login.php">Team Admin</a>
-        <a href="login.php">Club Admin</a>
-        <a href="login.php">League Admin</a>
-        
+            <?php sideMenu($menu); ?>
     </div>
  
     <div id ="logo-container">
