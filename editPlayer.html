@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CLMS Home Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+
+    <link rel="stylesheet" href="template/css/style.css">
+
+    <link rel="stylesheet" href="css/croppie.css" />
+    <script src="js/croppie.js"></script>
+    
+    <script src="template/scripts/template.js"></script>
+
+    
+</head>
+
+<body>
+    <nav class="navbar ">
+
+        <span class="open-slide ">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="3" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="3" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="3" />
+                </svg>
+            </a>
+        </span>
+
+
+        <ul class="navbar-nav">
+
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Scoring</a></li>
+            <li> <a href="#">Live Games</a></li>
+            <li> <a href="#">Schedule</a></li>
+            <li> <a href="#">Results</a></li>
+            <li> <a href="#">Stats</a></li>
+            <li> <a href="#">Team Admin</a></li>
+            <li> <a href="#">Club Admin</a></li>
+            <li> <a href="#">League Admin</a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Scoring</a>
+        <a href="#">Live Games</a>
+        <a href="#">Schedule</a>
+        <a href="#">Results</a>
+        <a href="#">Stats</a>
+        <span class="divider"></span>
+        <a href="#">Team Admin</a>
+        <a href="#">Club Admin</a>
+        <a href="#">League Admin</a>
+
+    </div>
+
+    <div id="logo-container">
+
+        <img src="template/assets/Banner.jpg" alt="Cricket League Management System">
+    </div>
+    <!-- Header ends-->
+    <!-- Content Starts-->
+    <div id="main" class="container ">
+            <form id="rendered-form">
+                    <div class="row">
+                            <div class="col-md-12">
+                                    <h1 id="playerName">John Malvik</h1>
+                            </div>
+                          
+                        </div>
+                            <div class="row">
+                                <div class="col-md-4 ">
+                                        <div id="uploaded_image">
+                                            
+                                        </div>
+                                        <br/>
+                                        <input type="file" name="upload_image" id="upload_image" accept="image/*" />
+                                        <br/>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" >Save</button>
+                                </div>
+                                <div class="col-md-8">
+                                        <div class="row">
+                                                <div class="col-md-4">
+                                                        <div class="fb-date form-group field-dob"><label for="dob" class="fb-date-label">Birthdate</label><input type="date" class="form-control" name="dob" id="dob" disabled="true"></div>
+                                                    </div>
+                                                <div class="col-md-4">
+                                                        <div class="fb-select form-group field-battingStyle">
+                                                                <label for="battingStyle" class="fb-select-label">Batting Style</label>
+                                                                <select class="form-control" name="battingStyle" id="battingStyle">
+                                                                   <option selected="true" id="battingStyle-0">N/A</option>
+                                                                   <option value="RHB2" id="battingStyle-1">Right Hand Batsman</option>
+                                                                   <option value="LHB" id="battingStyle-2">Left Hand Batsman</option>
+                                                                </select>
+                                                             </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="fb-select form-group field-bowlingStyle">
+                                                                <label for="bowlingStyle" class="fb-select-label">Bowling Style</label>
+                                                                <select class="form-control" name="bowlingStyle" id="bowlingStyle">
+                                                                   <option selected="true" id="bowlingStyle-0">N/A</option>
+                                                                   <option value="RAF" id="bowlingStyle-1">Right Arm Fast</option>
+                                                                   <option value="RAM" id="bowlingStyle-2">Right Arm Medium Fast</option>
+                                                                   <option value="RAO" id="bowlingStyle-3">Right Arm Off-Break</option>
+                                                                   <option value="RAL" id="bowlingStyle-4">Right Arm Leg-Break</option>
+                                                                   <option value="LAF" id="bowlingStyle-5">Left Arm Fast</option>
+                                                                   <option value="LAM" id="bowlingStyle-6">Left Arm Medium Fast</option>
+                                                                   <option value="LAO" id="bowlingStyle-7">Left Arm Off-Break</option>
+                                                                   <option value="LAL" id="bowlingStyle-8">Left Arm Leg-Break</option>
+                                                                </select>
+                                                             </div>
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                                <div class="fb-text form-group field-email"><label for="email" class="fb-text-label">Email</label><input type="email" class="form-control" name="email" id="email"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <div class="fb-text form-group field-phone"><label for="phone" class="fb-text-label">Phone</label><input type="tel" class="form-control" name="phone" id="phone"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-12">
+                                                    <div class="fb-text form-group field-address">
+                                                        <label for="address" class="fb-text-label">Address</label><input type="text" class="form-control" name="address" id="address"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                </form>
+           
+    
+      
+          
+
+            <!-- Image Dailog Crop Starts -->
+            <div id="uploadimageModal" class="modal" role="dialog">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Upload & Crop Image</h4>
+                           </div>
+                           <div class="modal-body">
+                             <div class="row">
+                          <div class="col-md-8 text-center">
+                           <div id="image_demo" style="width:350px; margin-top:30px"></div>
+                          </div>
+                          <div class="col-md-4" style="padding-top:30px;">
+                          
+                           <button class="btn btn-success crop_image">Crop & Upload Image</button>
+                        </div>
+                       </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                       </div>
+                   </div>
+                   <!-- Image Dailog Crop Ends -->
+        
+
+    </div>
+
+    <!-- Content Ends-->
+    <script>  
+        $(document).ready(function(){
+        
+         $image_crop = $('#image_demo').croppie({
+            enableExif: true,
+            viewport: {
+              width:200,
+              height:220,
+              type:'square' //circle
+            },
+            boundary:{
+              width:300,
+              height:300
+            }
+          });
+        
+          $('#upload_image').on('change', function(){
+            var reader = new FileReader();
+            reader.onload = function (event) {
+              $image_crop.croppie('bind', {
+                url: event.target.result
+              }).then(function(){
+                console.log('jQuery bind complete');
+              });
+            }
+            reader.readAsDataURL(this.files[0]);
+            $('#uploadimageModal').modal('show');
+          });
+        
+          $('.crop_image').click(function(event){
+            $image_crop.croppie('result', {
+              type: 'canvas',
+              size: 'viewport'
+            }).then(function(response){
+              $.ajax({
+                url:"upload.php",
+                type: "POST",
+                data:{"image": response},
+                success:function(data)
+                {
+                  $('#uploadimageModal').modal('hide');
+                  $('#uploaded_image').html(data);
+                }
+              });
+            })
+          });
+        
+        });  
+        </script>
+
+
+
+</body>
+
+
+
+</html>
