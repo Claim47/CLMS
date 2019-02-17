@@ -1,90 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+$title = 'Home'; 
+include('template/header.php');
+ ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CLMS Home Page</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css">
-
-    <link rel="stylesheet" href="template/css/style.css">
-
-    <link rel="stylesheet" href="css/liveGame.css">
-    <link rel="stylesheet" href="css/rankCard.css">
-    <script src="template/scripts/template.js"></script>
-
-    <style>
-   
-    </style>
-</head>
-
-<body>
-    <nav class="navbar ">
-
-        <span class="open-slide ">
-            <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="3" />
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="3" />
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="3" />
-                </svg>
-            </a>
-        </span>
-
-
-        <ul class="navbar-nav">
-
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Scoring</a></li>
-            <li> <a href="#">Live Games</a></li>
-            <li> <a href="#">Schedule</a></li>
-            <li> <a href="#">Results</a></li>
-            <li> <a href="#">Stats</a></li>
-            <li> <a href="#">Team Admin</a></li>
-            <li> <a href="#">Club Admin</a></li>
-            <li> <a href="#">League Admin</a></li>
-        </ul>
-    </nav>
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Scoring</a>
-        <a href="#">Live Games</a>
-        <a href="#">Schedule</a>
-        <a href="#">Results</a>
-        <a href="#">Stats</a>
-        <span class="divider"></span>
-        <a href="#">Team Admin</a>
-        <a href="#">Club Admin</a>
-        <a href="#">League Admin</a>
-
-    </div>
-
-    <div id="logo-container">
-
-        <img src="template/assets/shortBanner.jpg" alt="Cricket League Management System">
-    </div>
     <!-- Header ends-->
     <!-- Content Starts-->
-    <div id="main" class="container">
+<div id="main" class="container">
+        <!-- Heading of the page starts here -->
         <div class="row">
             <div class="col-md-12">
                 <h3>Panel Heading goes here</h3>
                 <h4>Sub heading of the page goes here</h4>
             </div>
         </div>
+        <!-- Heading of the page ends here -->
+
+        <!-- Control Panel Button Group starts here -->
         <div class="row">
             <div class="col-md-12 "  >
                     <div class="text-center">
@@ -106,9 +37,11 @@
                     </div>
             </div>
         </div>
+          <!-- Control Panel Button Group Ends here -->
+
+          <!-- Responsive Table starts here -->
         <div class="row">
             <div class="col-md-12 ">
-                <!--code start here-->
                         
                         <table class="table-resp">
                           <tr>
@@ -168,16 +101,13 @@
                             <td>100</td>
                           </tr>
                         </table>
-                   
-                <!--code ends here-->
+               
             </div>
         </div>
-    </div>
-
-    <!-- Content Ends-->
-
-</body>
-
-
-
-</html>
+          <!-- Responsive Table starts here -->
+    
+</div>
+    
+ <!-- Content Ends-->
+   
+<?php include('template/footer.php'); ?>

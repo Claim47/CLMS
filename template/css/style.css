@@ -11,7 +11,7 @@ hr{
 .navbar{
     background-color: #3b5998;
     overflow:hidden;
-    height: 63px;
+    height: 0px;
     border-radius: 0;
     margin-bottom: 0;
 }
@@ -28,7 +28,7 @@ navbar-nav {
     font-size: 17px;
 }
 .navbar ul{
-    margin: 8px 0 0 0;
+   /* margin: 8px 0 0 0;*/
     list-style: none;
 }
 .navbar a:hover{
@@ -84,15 +84,40 @@ navbar-nav {
  }
 #main{
     transition: margin-left 0.3s;
-    padding:20px;
+    padding:5px,20px,5px,20px;
     overflow: hidden;
     widows: 100px;
+    
 }
 
-@media(max-width:768px){
+.table-resp {
+      font-size :1.8vw;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    
+    .table-resp th, table-resp.td {
+      text-align: left;
+      padding: 1vw;
+      background-color:#036;
+      color:#fff;
+    }
+    .btn-admin {
+        border-radius: 0px!important;
+        width: 250px;
+        margin:10px;
+       
+    }
+    
+.table-resp tr:nth-child(even){background-color: #90DCFF;}
+.table-resp tr:nth-child(odd){background-color: #fff;}
+
+@media(max-width:769px){
     .navbar-nav{display: none}
 }
-@media(min-width:768px){
+@media(min-width:769px){
     .open-slide{display: none}
     .side-nav{display: none}
 }

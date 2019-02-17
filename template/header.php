@@ -49,5 +49,5 @@
  
     <div id ="logo-container">
 
-            <img src="assets/Banner.jpg" alt="Cricket League Management System">
+            <img src="assets/shortBanner.jpg" alt="Cricket League Management System">
     </div>
