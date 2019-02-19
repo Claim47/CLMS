@@ -16,11 +16,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     
     <link rel="stylesheet" href="css/liveGame.css">
     <link rel="stylesheet" href="css/rankCard.css">
     <link rel="stylesheet" href="template/css/style.css">
-    
+    <script src="template/scripts/template.js"></script>
     <?php include('menu.php'); ?>
   
 </head>
