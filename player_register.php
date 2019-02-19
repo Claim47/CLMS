@@ -2,15 +2,14 @@
 $title = 'Home'; 
 include('template/header.php');
  ?>
+
+ <!-- OnLoad Code -->
 <script>
+
 $( document ).ready(function() {
     console.log( "ready!" );
     //Load_existing_players()
 });
-
-
-
-
 </script>
     <!-- Header ends-->
     <!-- Content Starts-->
