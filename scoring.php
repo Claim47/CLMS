@@ -1,5 +1,5 @@
 <?php 
-$title = 'Live Games'; 
+$title = 'Scoring'; 
 include('template/header.php');
  ?>
 <!-- Header ends-->
