@@ -91,28 +91,31 @@ navbar-nav {
 }
 
 .table-resp {
-      font-size :1.8vw;
+      font-size :1vw;
       border-collapse: collapse;
       border-spacing: 0;
       width: 100%;
       border: 1px solid #ddd;
     }
     
-    .table-resp th, table-resp.td {
+.table-resp th, table-resp.td {
       text-align: left;
       padding: 1vw;
       background-color:#036;
       color:#fff;
     }
-    .btn-admin {
+
+.table-resp tr:nth-child(even){background-color: #90DCFF;}
+.table-resp tr:nth-child(odd){background-color: #fff;}
+
+.btn-admin {
         border-radius: 0px!important;
         width: 250px;
         margin:10px;
        
     }
     
-.table-resp tr:nth-child(even){background-color: #90DCFF;}
-.table-resp tr:nth-child(odd){background-color: #fff;}
+
 
 @media(max-width:769px){
     .navbar-nav{display: none}
