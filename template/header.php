@@ -28,9 +28,9 @@
   
 </head>
 <body>
+<?php if ($showMenue=='true'){ ?>
     <nav class="navbar ">
-           
-        <span class="open-slide ">
+    <span class="open-slide ">
             <a href="#" onclick="openSlideMenu()">
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke ="#fff" stroke-width ="3"/>
@@ -40,17 +40,26 @@
                 </svg>
             </a>
         </span>
+
+            <ul class='navbar-nav'>"
+            <?php desktopMenu($menu); ?>
+            </ul>
+         </nav>
+            <div id='side-menu' class='side-nav'>
+            <?php    sideMenu($menu); ?>
+            </div>
+
+            <div id ="logo-container">
+                            <img src="assets/shortBanner.jpg" alt="Cricket League Management System">       
+            </div> 
+<?php }  else {?>
     
-
-        <ul class="navbar-nav">
-        <?php desktopMenu($menu); ?> 
-        </ul>
-    </nav>
-    <div id="side-menu" class="side-nav">
-            <?php sideMenu($menu); ?>
-    </div>
- 
-    <div id ="logo-container">
-
-            <img src="assets/shortBanner.jpg" alt="Cricket League Management System">
-    </div>
+    <nav>
+      <div id ="logo-container">
+      <img src="assets/shortBanner.jpg"  alt="Cricket League Management System">        
+        </div>
+   
+</nav>
+<?php }
+?>
+          

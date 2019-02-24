@@ -19,6 +19,7 @@ function desktopMenu($pages)
 }
 function sideMenu($pages)
 {
+    echo "<a href='#' class='btn-close' onclick='closeSlideMenu()'>&times;</a>";
     foreach($pages as $key => $value) {
         echo "<a href=".$value.">".$key."</a>";
       }
